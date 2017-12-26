@@ -1,0 +1,8 @@
+<View android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    android:alpha="100"
+    android:background="@color/graybackgtound"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    

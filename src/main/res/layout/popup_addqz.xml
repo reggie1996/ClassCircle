@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_noti_green"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+
+   <TextView
+       android:id="@+id/pop_add"
+       android:layout_width="100dp"
+       android:layout_height="30dp"
+       style="@style/pop_text_style"
+       android:gravity="center"
+       android:text="新建圈子"/>
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"
+       android:layout_marginRight="2dp"
+       android:layout_margin="2dp"
+      android:background="@color/logingreen"
+       />
+
+   <TextView
+       android:id="@+id/pop_check"
+       android:layout_width="100dp"
+       android:layout_height="30dp"
+       style="@style/pop_text_style"
+       android:gravity="center"
+       android:text="查找圈子"/>
+
+
+</LinearLayout>

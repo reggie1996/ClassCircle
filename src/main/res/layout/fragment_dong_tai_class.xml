@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="doctorw.classcircle.controller.fragment.DongTaiClassFragment">
+    <doctorw.classcircle.view.SwipeRefreshView
+        android:id="@+id/sr_dongtai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_dongtai_class"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </doctorw.classcircle.view.SwipeRefreshView>
+</LinearLayout>

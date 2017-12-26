@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="logingreen">#43CABD</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dark">#FF222222</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="graytext">#737373</color> <!-- 115,115,115 -->
+    <color name="bluetext">#18ABE2</color> <!-- 24,171,226 -->
+    <color name="blue">#0AB8F4</color> <!-- 10,184,244 -->
+    <color name="lightgray">#F3F3F3</color> <!-- 243,243,243 -->
+    <color name="yellotexts">#FFFF00</color> <!-- 255,255,0 -->
+    <color name="bggray">#F0EFF4</color>
+    <color name="red">#ED1C24</color>
+    <color name="green">#22B14C</color>
+    <color name="flower">#843C33</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="logback">#89c997</color>
+    <color name="redforsalary">#F6A291</color>
+    <color name="gray">#9e9d9d</color>
+    <color name="yellow">#fed75d</color>
+    <color name="graybackgtound">#e0e9eb</color>
+    <color name="greentext">#0aa37f</color>
+    <color name="bg_gray">#EEEEEE</color>
+    <color name="light_gray">#e5e5e5</color>
+
+
+
+
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="title_bg">#373B3E</color>
+    <color name="video_bg">#ededed</color>
+
+    <!--========================-->
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="basic_color_primary">#373b3e</color>
+    <color name="dialog_btn">#44a2da</color>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#43CABD"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:alpha="0"
+            android:src="@drawable/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_round_button_white">
+
+                <RadioGroup
+                    android:id="@+id/rg_study_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_enter"
+                        style="@style/bottom_tag_style3"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="我的圈子" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:alpha="100"
+                        android:background="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rb_hot"
+                        style="@style/bottom_tag_style3"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="热门看点" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/iv_newqz"
+            android:src="@drawable/add1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_content_study"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

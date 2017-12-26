@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_toChat"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="班级热门动态"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12sp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical|right"
+            android:drawableRight="@drawable/red_dian"
+            android:text="班级热聊空间等待你的加入"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/divided_lineinfo"/>
+
+    <include layout="@layout/dongtai_item"/>
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</ListView>-->
+
+</LinearLayout>

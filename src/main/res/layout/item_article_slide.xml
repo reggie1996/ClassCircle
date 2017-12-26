@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="-60dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_art_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:alpha="0.8"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingTop="5dp"
+            android:text="每天和孩子说说话，孩子一天比一天好，是的 是的 ，大家"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="浏览量"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_art_read"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="20"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 评论"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_art_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="20"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="  赞"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_art_favor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="300"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/iv_art_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_classcircle_chat" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="-5dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:text="Delete"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

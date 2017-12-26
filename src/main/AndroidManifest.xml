@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="doctorw.classcircle">
+    // 配置权限
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 读取 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 写入权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 创建与删除权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".ClassCircleApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden|adjustResize">
+
+        <!-- android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor" -->
+        <activity android:name=".controller.activity.MainActivity" />
+        <activity
+            android:name=".controller.activity.LauncherActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:name=".controller.activity.LauncherActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1142170114178034#classcircle" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <!-- <service -->
+        <!-- android:name="com.hyphenate.chat.EMJobService" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="android.permission.BIND_JOB_SERVICE" /> -->
+
+
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".controller.activity.LoginActivity" />
+        <!-- <activity android:name=".controller.activity.BaseActivity" /> -->
+        <activity android:name=".controller.activity.RegisterActivity" />
+        <!-- <activity android:name=".view.YEditText" /> -->
+        <activity android:name=".controller.activity.ClassDongtaiActivity" />
+        <activity android:name=".controller.activity.ClassCircleActivity" />
+        <activity android:name=".controller.activity.ClassInterestActivity" />
+        <activity android:name=".controller.activity.SelfInfoActivity" />
+        <activity android:name=".controller.activity.ClassNotificationActivity" />
+        <activity android:name=".controller.activity.ClassScoreActivity" />
+        <activity android:name=".controller.activity.ClassManagerActivity" />
+        <activity android:name=".controller.activity.ClassPicturesActivity" />
+        <activity android:name=".controller.activity.ClassHomeworkActivity" />
+        <activity android:name=".controller.activity.ClassChatActivity" />
+        <activity android:name=".controller.activity.NewGroupActivity" />
+        <activity android:name=".controller.activity.ChatActivity" />
+        <activity android:name=".controller.activity.AddGroupActivity" />
+        <activity android:name=".controller.activity.GroupDetailActivity" />
+        <activity android:name=".controller.activity.GroupMessageActivity" />
+        <activity android:name=".controller.activity.InviteActivity" />
+        <activity android:name=".controller.activity.ChooseActivity" />
+        <activity android:name=".controller.activity.ArticleWebActivity" />
+        <activity android:name=".controller.activity.ImagePagerActivity" />
+        <activity android:name=".controller.activity.SelfDongTaiActivity" />
+        <activity
+            android:name=".controller.activity.ClassDongTai2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity android:name=".controller.activity.DongTaiDetailActivity" />
+        <activity android:name=".controller.activity.PublishCircleActivity" />
+        <activity android:name=".controller.activity.TestPicActivity" />
+        <activity android:name=".controller.activity.PhotoActivity" />
+        <activity android:name=".controller.activity.ImageGridActivity" />
+        <activity android:name=".controller.activity.UserDetailsActivity" />
+        <activity android:name=".controller.activity.AllMembersActivity" />
+        <activity android:name=".controller.activity.StudyWebActivity" />
+        <activity android:name=".controller.activity.ShouCangActivity" />
+        <activity android:name=".controller.activity.MyPhotosActivity" />
+        <activity android:name=".controller.activity.SettingsActivity" />
+        <activity android:name=".controller.activity.WriteNotiActivity" />
+        <activity android:name=".controller.activity.WriteArtcileActivity" />
+        <activity android:name=".controller.activity.NotiDetailActivity" />
+        <activity android:name=".controller.activity.TestActivity2" />
+        <activity
+            android:name=".controller.activity.TestActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1106074227" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.onekeyshare.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".controller.activity.PublishCircleMovieActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/JieCaoVideoPlayerTheme" />
+        <activity android:name=".controller.activity.RecorderVideoActivity" />
+        <activity android:name=".controller.activity.PublishCircleVoiceActivity" />
+        <activity
+            android:name=".controller.activity.XQCircleActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.activity.XQPublishCircleMovieActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".controller.activity.XQPublishCircleActivity" />
+        <activity android:name=".controller.activity.XQPublishCircleVoiceActivity" />
+        <activity android:name=".controller.activity.CreateInterestActivity" />
+        <activity android:name=".controller.activity.XQSearchInterestActivity" />
+        <activity android:name=".controller.activity.XQDetilsActivity" />
+        <activity android:name=".controller.activity.XQDetils2Activity" />
+        <activity android:name=".controller.activity.XQCircleMessageActivity" />
+        <activity android:name=".controller.activity.ClassKcbActivity" />
+        <activity android:name=".controller.activity.ClassSmallCirActivity" />
+        <activity android:name=".controller.activity.ShowBabyActivity"></activity>
+        <activity android:name=".controller.activity.Grallery3DActivity"></activity>
+    </application>
+
+</manifest>

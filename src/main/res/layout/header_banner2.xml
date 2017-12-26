@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="doctorw.classcircle.controller.fragment.Study2Fragment">
+
+    <LinearLayout
+        android:id="@+id/ll_write"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/icon_write" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="优秀稿件征集"
+            android:textColor="@color/black"
+            android:alpha="0.8"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrow3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divided_lineinfo2" />
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="40dp">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="家长都爱读"
+            android:alpha="0.8"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="热门排行榜"
+            android:textColor="@color/green"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            />
+
+
+    </LinearLayout>
+    <include layout="@layout/divided_lineinfo2" />
+
+    <View
+        android:background="@color/black"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
+
+
+

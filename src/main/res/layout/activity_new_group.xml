@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.hyphenate.easeui.widget.EaseTitleBar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/logingreen"-->
+        <!--app:titleBarTitle="新建班级圈">-->
+
+    <!--</com.hyphenate.easeui.widget.EaseTitleBar>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#43CABD"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_back1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back3"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="新建群组"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_add1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:src="@drawable/icon"
+            app:civ_border_color="#FFffffff"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <doctorw.classcircle.view.YEditText
+            android:id="@+id/et_newgroup_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="填写群名称（2-10个字）"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/greentext"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:alpha="100"
+        android:background="@color/green" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round_button_green"
+        android:gravity="start">
+
+        <doctorw.classcircle.view.YEditText
+            android:id="@+id/et_newgroup_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="start"
+            android:hint="输入群介绍"
+            android:padding="5dp"
+            android:textColorHint="@color/greentext"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="53dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_newgroup_public"
+            style="@style/CustomCheckBoxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:checked="false"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:text="是否公开"
+            android:textColor="@color/greentext"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_newgroup_invite"
+            style="@style/CustomCheckBoxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:checked="false"
+            android:paddingLeft="6dp"
+            android:paddingTop="8dp"
+            android:text="是否开放群邀请"
+            android:textColor="@color/greentext"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_newgroup_create"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_round_button_green_solid"
+        android:text="提 交"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustNothing">
+
+    <!--标题栏-->
+    <!--FrameLayout-->
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--底部的RadioGroup-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:alpha="100"
+            android:background="@color/logingreen" />
+
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="6dp">
+
+            <RadioButton
+                android:id="@+id/rb_school"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_1school_drawable_selector"
+                android:text="班级" />
+
+            <RadioButton
+                android:id="@+id/rb_xingqu"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_2shequ_drawable_selector"
+                android:text="圈子" />
+
+            <RadioButton
+                android:id="@+id/rb_shequ"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_3art_drawable_selector"
+                android:text="文章" />
+
+            <RadioButton
+                android:id="@+id/rb_study"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_3study_drawable_selector"
+                android:text="学习" />
+
+            <RadioButton
+                android:id="@+id/rb_self"
+                style="@style/bottom_tag_style"
+                android:drawableTop="@drawable/rb_4self_drawable_selector"
+                android:text="个人" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

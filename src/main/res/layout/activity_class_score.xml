@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="doctorw.classcircle.controller.activity.ArticleWebActivity">
+
+    <include
+
+        layout="@layout/titlebar_art" />
+
+    <WebView
+        android:id="@+id/wv_art"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#F8F8F8"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#43CABD" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<EditText-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/bg_round_button_white_solid"-->
+    <!--android:hint="参与讨论"-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:background="@drawable/bg_round_button_comment"-->
+    <!--android:gravity="center"-->
+    <!--android:text="发送"-->
+    <!--android:textColor="@color/white" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="12dp"-->
+    <!--android:paddingTop="12dp"-->
+    <!--android:src="@drawable/icon_share" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

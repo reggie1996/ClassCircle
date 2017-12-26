@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingRight="20dp">
+
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="26dp" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/view_1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/timeline_green" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_1"
+        android:layout_marginLeft="20dp"
+        android:alpha="0.8"
+        android:text="12月12日"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <View
+
+        android:id="@+id/view_2"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="3dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="-20dp"
+        android:layout_toRightOf="@+id/image"
+        android:background="@drawable/timeline_content"
+        android:padding="10dp">
+
+        <doctorw.classcircle.view.NoScrollGridView
+            android:id="@+id/photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/rl" />
+
+</RelativeLayout>
